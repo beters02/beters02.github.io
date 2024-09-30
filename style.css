@@ -1,0 +1,51 @@
+:root {
+    color-scheme: dark;
+}
+html{
+    height: 0;
+    width: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 0;
+    overflow-x: hidden;
+}
+.bento-div#left-box {
+    width: 70%;
+    height: 100vh;
+    display: inline-block;
+    font-size: initial;
+}
+.bento-div#right-box {
+    width: 30%;
+    position:absolute;
+    height: 100vh;
+    display: inline-block;
+
+}
+.bento-div#right-box a img {
+    width: 100%;
+}
+.bento-div#left-box h1 {
+    width: fit-content;
+    margin: 2% auto;
+    font-size:48pt;
+    text-decoration: solid underline;
+    color:blanchedalmond;
+}
+
+@media only screen and ( aspect-ratio < .7 ) {
+    .bento-div#left-box {
+        width: 100%;
+        height: 70vh;
+        display: block;
+    }
+    .bento-div#right-box {
+        width: 100%;
+        height: 70vh;
+        display: block;
+    }
+    
+}
